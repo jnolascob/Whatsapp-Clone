@@ -1,0 +1,22 @@
+package com.jnolascob.twitter;
+
+import com.viewpagerindicator.TabPageIndicator;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+
+public class ConfiguracionActivity extends FragmentPagerAdapter{
+	private String[] titles = { "Title1", "Title2", "Title3" };
+	
+	public public ConfiguracionActivity(FragmentManager fm) {
+		super(fm);
+	}
+	
+	
+	
+	
+		
+}

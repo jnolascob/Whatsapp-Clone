@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Formulario/res/layout/signin.xml&apos; to &apos;signin_layout.xml&apos;" description="Rename resource &apos;signin.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/signin.xml" name="signin_layout.xml" stamp="1386192044690" updateReferences="true"/>
+</session>

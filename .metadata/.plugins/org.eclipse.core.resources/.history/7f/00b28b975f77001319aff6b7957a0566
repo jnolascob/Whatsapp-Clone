@@ -1,0 +1,22 @@
+package com.whatsapp.pe;
+
+import com.example.tabs.TestFragment;
+
+import android.app.Fragment;
+
+public class TestFragment extends Fragment{
+	private static final String KEY_CONTENT = "TestFragment:Content";
+	
+	public static TestFragment newInstance(String content) {
+        TestFragment fragment = new TestFragment();
+
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < 20; i++) {
+            builder.append(content).append(" ");
+        }
+        builder.deleteCharAt(builder.length() - 1);
+        fragment.mContent = builder.toString();
+
+        return fragment;
+    }
+}

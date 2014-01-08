@@ -1,0 +1,33 @@
+package com.jnolascob.twitter;
+
+import com.viewpagerindicator.PageIndicator;
+import com.viewpagerindicator.TitlePageIndicator;
+
+import android.app.Activity;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+
+public class ConfiguracionActivity extends FragmentActivity{
+	private FragmentAdapter mAdapter;
+	private ViewPager mPager;
+	private PageIndicator mIndicator;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		this.setContentView(R.layout.configuracion_layout);
+		
+		mAdapter = new FragmentAdapter(getSupportFragmentManager());
+		
+		mPager = (ViewPager)findViewById(R.id.pager);
+		mPager.setAdapter(mAdapter);
+		
+		mIndicator = (TitlePageIndicator)findViewById(R.id.indicator);
+		mIndicator.setViewPager(mPager);
+	}
+
+}

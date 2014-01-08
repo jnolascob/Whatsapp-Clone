@@ -1,0 +1,8 @@
+package com.whatsapp.pe;
+
+import android.app.Fragment;
+
+public class TestFragment extends Fragment{
+	private static final String KEY_CONTENT = "TestFragment:Content";
+
+}

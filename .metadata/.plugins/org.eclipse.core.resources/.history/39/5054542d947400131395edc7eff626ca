@@ -1,0 +1,12 @@
+package com.example.swipeytabs;
+
+import com.viewpagerindicator.IconPagerAdapter;
+
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class FragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter{
+	public FragmentAdapter(FragmentManager fm) {
+        super(fm);
+        // TODO Auto-generated constructor stub
+    }
+}

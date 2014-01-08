@@ -1,0 +1,27 @@
+package com.jnolascob.twitter;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class FragmentAdapter extends FragmentPagerAdapter{
+	private String[] titles = {"title1", "title2", "title3"};
+	
+	public ConfiguracionActivity(FragmentManager fm) {
+		super(fm);
+	}
+	
+	public CharSequence getPageTitle(int position) {
+	    return titles[position];
+    }
+			 
+    @Override
+    public int getCount() {
+        return titles.length;
+    }
+
+	@Override
+	public android.support.v4.app.Fragment getItem(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

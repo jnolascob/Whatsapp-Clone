@@ -39,9 +39,45 @@ public class MainActivity extends SherlockFragmentActivity {
 
 		@Override
 		public Fragment getItem(int position) {
-			return TestFragment.newInstance(CONTENT[position % CONTENT.length]);
+			//default
+			//return TestFragment.newInstance(CONTENT[position % CONTENT.length]);
+			Fragment fragment;
+			
+			switch (position) {
+			case 0:
+				fragment = new FirstActivity();
+				break;
+			case 1:
+				fragment = new SecondActivity();
+				break;
+			default:
+				fragment = new FirstActivity();
+				break;
+			}
+			return fragment;
 		}
-
+		
+		@Override
+        public CharSequence getPageTitle(int position) {
+			//default
+            //return CONTENT[position % CONTENT.length].toUpperCase();
+			String title = "";
+	        switch(position){
+	        case 0:
+	            title = "Contactos";
+	            break;
+	        case 1:
+	            title = "Chats";
+	            break;
+	        case 2:
+	            title = "Favoritos";
+	            break;
+	        case 3:
+	            title = "Otros";
+	            break;
+	        }
+	        return title;
+        }
 		@Override
 		public int getCount() {
 			return CONTENT.length;

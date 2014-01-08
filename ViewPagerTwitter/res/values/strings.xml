@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ViewPagerTwitter</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="one">page 1</string>
+    <string name="two">page 2</string>
+    <string name="three">page 3</string>
+    <string name="four">page 4</string>
+
+</resources>

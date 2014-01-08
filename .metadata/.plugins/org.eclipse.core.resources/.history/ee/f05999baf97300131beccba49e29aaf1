@@ -1,0 +1,12 @@
+package com.jnolascob.twitter;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+public class ConfiguracionActivity extends FragmentPagerAdapter{
+
+	public ConfiguracionActivity(FragmentManager fm) {
+		super(fm);
+	}
+
+}

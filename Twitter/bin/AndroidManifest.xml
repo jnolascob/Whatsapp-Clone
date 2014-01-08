@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jnolascob.twitter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Styled" >
+        <activity
+            android:name="com.jnolascob.twitter.Main"
+            android:label="@string/app_name" >
+          
+        </activity>
+        <activity 
+        	android:name="com.jnolascob.twitter.ViewDatabase"
+        	android:label="@string/app_name">
+        	  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.jnolascob.twitter.FavoritosActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <receiver android:name=".MyWidget" android:label="Mi primer widget">
+        	<intent-filter >
+        	    <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        	</intent-filter>
+        	<meta-data 
+        	    android:name="android.appwidget.provider"
+        	    android:resource="@layout/widget_provider"/>
+        </receiver>
+    </application>
+
+</manifest>
